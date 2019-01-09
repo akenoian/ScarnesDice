@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+tools:context=".MainActivity">
+
+<TextView
+    android:id="@+id/yourScore"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignParentStart="true"
+    android:layout_alignParentTop="true"
+    android:layout_marginStart="32dp"
+    android:layout_marginTop="86dp"
+    android:text="Your Score: 0" />
+
+<TextView
+    android:id="@+id/comScore"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignTop="@+id/yourScore"
+    android:layout_alignParentStart="true"
+    android:layout_marginStart="267dp"
+    android:layout_marginTop="4dp"
+    android:text="Computer Score: 0" />
+
+<ImageView
+    android:id="@+id/oneDice"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignParentStart="true"
+    android:layout_alignParentTop="true"
+    android:layout_marginStart="147dp"
+    android:layout_marginTop="220dp"
+    app:srcCompat="@drawable/dice1" />
+
+<Button
+    android:id="@+id/roll"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignParentBottom="true"
+    android:layout_marginEnd="-100dp"
+    android:layout_marginBottom="93dp"
+    android:layout_toStartOf="@+id/oneDice"
+    android:text="Roll" />
+
+<Button
+    android:id="@+id/hold"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignParentStart="true"
+    android:layout_alignParentBottom="true"
+    android:layout_marginStart="156dp"
+    android:layout_marginBottom="93dp"
+    android:text="Hold" />
+
+<Button
+    android:id="@+id/reset"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignParentBottom="true"
+    android:layout_marginStart="-95dp"
+    android:layout_marginBottom="89dp"
+    android:layout_toEndOf="@+id/comScore"
+    android:text="Reset" />
+
+<TextView
+    android:id="@+id/extra"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignParentStart="true"
+    android:layout_alignParentTop="true"
+    android:layout_marginStart="24dp"
+    android:layout_marginTop="118dp"
+    android:text="TextView" />
+</RelativeLayout>
